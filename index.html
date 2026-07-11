@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brown's Plumbing | Honest Plumbing Done Right</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:#0b63b6;
+    color:white;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,80,150,.75),rgba(0,80,150,.75)),
+    url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 10%;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0b63b6;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:8px;
+}
+
+.contact{
+    background:#0b63b6;
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+footer{
+    background:#222;
+    color:#ccc;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Brown's Plumbing</div>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Reliable Plumbing You Can Trust</h1>
+    <p>Residential • Commercial • Emergency Service</p>
+    <a class="btn" href="tel:5551234567">Call (555) 123-4567</a>
+</section>
+
+<section id="services">
+    <h2 style="text-align:center;margin-bottom:40px;">Our Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Drain Cleaning</h3>
+            <p>Fast removal of clogged sinks, tubs, showers, and sewer lines.</p>
+        </div>
+
+        <div class="card">
+            <h3>Water Heater Repair</h3>
+            <p>Repair and replacement of traditional and tankless water heaters.</p>
+        </div>
+
+        <div class="card">
+            <h3>Leak Detection</h3>
+            <p>Find hidden leaks before they become expensive repairs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Emergency Plumbing</h3>
+            <p>Available when plumbing problems can't wait.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about">
+
+<div class="about">
+
+<div>
+<h2>About Brown's Plumbing</h2>
+
+<br>
+
+<p>
+For years we've been helping homeowners and businesses with honest,
+dependable plumbing service. We believe in quality workmanship,
+fair pricing, and treating every customer like family.
+</p>
+
+<br>
+
+<p>
+Whether it's a leaking faucet or a complete plumbing installation,
+our experienced team is ready to help.
+</p>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Need a Plumber?</h2>
+
+<p>📞 (555) 123-4567</p>
+
+<br>
+
+<p>📧 info@brownsplumbing.com</p>
+
+<br>
+
+<p>123 Main Street<br>Hometown, USA</p>
+
+<br>
+
+<a class="btn" href="tel:5551234567">Call Now</a>
+
+</section>
+
+<footer>
+
+© 2026 Brown's Plumbing. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
